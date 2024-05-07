@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+/* Agregar imagen de fondo a los laterales */
+body::before {
+    content: '';
+    background-image: url('../img/background/background.jpeg');
+    background-repeat: repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#logo {
+    height: 90px;
+    width: auto;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para la cabecera */
+
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #333333;
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Estilos para el contenido */
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.content-section {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    color: #333333;
+    border-bottom: 2px solid #333333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.content-section p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Estilos para el pie de página */
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer h4 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+iframe {
+    border: 1px solid #dddddd;
+}
