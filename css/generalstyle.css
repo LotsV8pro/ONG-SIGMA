@@ -85,6 +85,10 @@ header {
     color: #666666;
     line-height: 1.6;
 }
+.redes-sociales li a {
+    color: #ffffff; /* Color blanco para los enlaces */
+    text-decoration: none; /* Eliminar subrayado */
+}
 
 /* Estilos para el pie de página */
 
