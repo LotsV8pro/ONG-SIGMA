@@ -64,6 +64,12 @@ header {
 .navbar-nav .nav-link:hover {
     color: #007bff;
 }
+/* Estilos del logo en la barra de navegación */
+.navbar-brand img {
+    height: 60px; /* Ajusta la altura del logo */
+    width: auto; /* Permite que el ancho se ajuste automáticamente */
+}
+
 
 /* Contenido principal */
 .content {
@@ -136,16 +142,132 @@ p, ol, ul {
     font-size: 16px;
     line-height: 1.6;
 }
+
+/* Estilos para las columnas */
 .col-md-6 {
     border-right: 1px solid #dddddd; /* Agrega una línea gris clara a la derecha de la primera columna */
-    padding-right: 15px; /* Ajusta el espacio entre el borde derecho y el contenido */
+    padding-right: 15px; /* Ajuste el espacio entre el borde derecho y el contenido */
 }
 
 .col-md-6:last-child {
     border-right: none; /* Elimina la línea gris clara a la derecha de la última columna */
-    padding-left: 15px; /* Ajusta el espacio entre el borde izquierdo y el contenido */
+    padding-left: 15px; /* Ajuste el espacio entre el borde izquierdo y el contenido */
 }
 
 .col-md-6:first-child {
     border-right: 1px solid #dddddd; /* Agrega una línea gris clara a la derecha de la primera columna */
+}
+
+/* Estilos para las tarjetas de donación */
+.card {
+    background-color: #f8f9fa;
+    border: none;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los botones de donar ahora */
+.btn-donar {
+    background-color: #343a40;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.btn-donar:hover {
+    background-color: #4e555c;
+}
+
+/* Estilos para la página de pago de donaciones */
+
+/* Contenedor principal */
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Formulario de donación */
+.payment-form {
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.payment-form label {
+    color: #333333;
+    font-weight: bold;
+}
+
+.payment-form select {
+    margin-bottom: 20px;
+}
+
+/* Estilos para los botones de donación */
+.payment-btn {
+    background-color: #343a40;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.payment-btn:hover {
+    background-color: #4e555c;
+}
+
+/* Footer */
+.payment-footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.payment-footer h4 {
+    margin-bottom: 20px;
+}
+
+.redes-sociales li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.redes-sociales li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Imagen de la plataforma de pago */
+.payment-provider {
+    margin-top: 30px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.payment-provider img {
+    max-width: 100%;
+    height: auto;
 }
