@@ -92,19 +92,17 @@ header {
     line-height: 1.6;
 }
 
+
 /* Pie de página */
 footer {
     background-color: #343a40;
     color: #ffffff;
-    padding: 20px 0;
     text-align: center;
-    position: fixed; /* Cambia la posición a fija */
-    left: 0;
-    bottom: -80px; /* Desplaza el footer hacia abajo */
-    width: 100%;
-    z-index: 1000;
-    height: auto; /* Altura dinámica */
-    transition: bottom 0.3s ease; /* Añade una transición suave */
+}
+
+footer h4 {
+    color: #ffffff;
+    margin-bottom: 2%;
 }
 
 /* Ajustes adicionales para el contenido */
@@ -113,11 +111,6 @@ footer {
 }
 
 
-
-footer h4 {
-    color: #ffffff;
-    margin-bottom: 20px;
-}
 
 /* Estilos para los enlaces de redes sociales */
 .redes-sociales li a {
