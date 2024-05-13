@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Sitio Web</title>
+    <title>Preguntas Frecuentes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/generalstyle.css"> <!-- Tu archivo de estilos personalizado -->
+    <link rel="stylesheet" href="../../css/faq/faq.css"> <!-- Tu archivo de estilos personalizado -->
 </head>
 <body>
     <header>
@@ -21,16 +21,16 @@
                     <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./view/donaciones/donaciones.html">Donaciones</a>
+                    <a class="nav-link" href="../../view/donaciones/donaciones.html">Donaciones</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Mas informacion
+                      Más información
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Preguntas frequentes</a></li>
-                      <li><a class="dropdown-item" href="../ayuda/ayuda.html">Ayuda</a></li>
-                      <li><a class="dropdown-item" href="../soporte/soporte.html">Soporte</a></li>
+                      <li><a class="dropdown-item" href="../../view/preguntas_frecuentes/preguntas_frecuentes.html">Preguntas frecuentes</a></li>
+                      <li><a class="dropdown-item" href="../../view/ayuda/ayuda.html">Ayuda</a></li>
+                      <li><a class="dropdown-item" href="../../view/soporte/soporte.html">Soporte</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -40,35 +40,70 @@
     </header>
     <div class="container content">
         <div class="row">
-            <div class="col-md-6">
-                <h2>Sobre Nosotros</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lectus sed nunc porta, id pretium purus lacinia.</p>
-                <h3>Nuestra Misión</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lectus sed nunc porta, id pretium purus lacinia.</p>
-                <h3>Nuestra Visión</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lectus sed nunc porta, id pretium purus lacinia.</p>
-            </div>
-            <div class="col-md-6">
-                <h2>Nuestra Ubicación</h2>
-                <p><strong>Dirección:</strong> 123 Calle Principal, Ciudad, País</p>
-                <p><strong>Teléfono:</strong> +123 456 789</p>
-                <p><strong>Correo Electrónico:</strong> info@tuempresa.com</p>
-                <p><strong>Horario de Atención:</strong> Lunes a Viernes, 9:00 AM - 5:00 PM</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124722.90020747415!2d-0.24168136351087684!3d51.52877184110719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d3f2ad8e4d%3A0x1c36f5b6ba0a910!2sLondon%2C%20UK!5e0!3m2!1sen!2suk!4v1643901309354!5m2!1sen!2suk" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <h2>Nuestros Servicios</h2>
-                <h3>Servicio 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lectus sed nunc porta, id pretium purus lacinia.</p>
-                <h3>Servicio 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lectus sed nunc porta, id pretium purus lacinia.</p>
-            </div>
-            <div class="col-md-6">
-                <h2>Testimonios de Clientes</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lectus sed nunc porta, id pretium purus lacinia.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lectus sed nunc porta, id pretium purus lacinia.</p>
+            <div class="col-md-12">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                ¿Por qué están en contra de los coches eléctricos?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Estamos en contra de los coches eléctricos debido a su impacto negativo en el medio ambiente durante su producción, la dependencia de recursos finitos para sus baterías y la falta de infraestructura adecuada para su recarga.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Qué alternativas proponen a los coches eléctricos?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Proponemos promover el uso del transporte público, compartir coche, caminar, utilizar bicicleta y optar por vehículos impulsados por combustibles renovables como el hidrógeno o biocombustibles.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Cuál es el impacto ambiental de la fabricación de coches eléctricos?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                La fabricación de coches eléctricos implica la extracción de minerales como el litio y el cobalto, cuya explotación puede provocar deforestación, degradación del suelo y contaminación del agua.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                ¿Qué medidas proponen para reducir el uso de coches eléctricos?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Para reducir el uso de coches eléctricos, promovemos políticas de transporte público eficientes, inversión en infraestructuras para medios de transporte sostenibles y concienciación sobre los impactos ambientales de los coches eléctricos.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                ¿Cuáles son las ventajas de los coches a combustible?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Los coches a combustible ofrecen mayor autonomía, tiempos de recarga más rápidos y una infraestructura de reabastecimiento más desarrollada en comparación con los coches eléctricos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -76,22 +111,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center">
-                    <h4>Contactanos</h4>
-                    <!-- Agrega aquí tus detalles de contacto -->
+                    <h4>Contacto</h4>
+                    <p><strong>Dirección:</strong> 123 Calle Principal, Ciudad, País</p>
+                    <p><strong>Teléfono:</strong> +123 456 789</p>
+                    <p><strong>Correo Electrónico:</strong> info@tuempresa.com</p>
+                    <p><strong>Horario de Atención:</strong> Lunes a Viernes, 9:00 AM - 5:00 PM</p>
                 </div>
                 <div class="col-md-6 text-center">
                     <h4>Redes Sociales</h4>
-                    <!-- Agrega aquí tus enlaces a redes sociales -->
+                        <ul class="list-unstyled redes-sociales">
+                            <li><a href="https://www.facebook.com/sigma-ong" target="_blank">Facebook</a></li>
+                            <li><a href="https://twitter.com/sigma-ong" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/sigma-ong" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/company/sigma-ong" target="_blank">LinkedIn</a></li>
+                        </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <!-- Agrega aquí tu logo -->
+                    <!-- Aquí puedes agregar tu logo -->
                 </div>
             </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
 </body>
 </html>

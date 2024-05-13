@@ -1,0 +1,183 @@
+/* Reiniciar estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Hace que el cuerpo ocupe al menos el 100% del alto de la ventana */
+}
+
+/* Imagen de fondo para el cuerpo */
+body::before {
+    content: '';
+    background-image: url('../../../img/background/background.jpeg');
+    background-repeat: repeat; /* Permite que la imagen se repita */
+    background-size: auto; /* Mantiene la resolución original de la imagen */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Logo */
+#logo {
+    height: 90px;
+    width: auto;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1; /* Hace que este contenedor ocupe todo el espacio disponible */
+}
+
+/* Cabecera */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Estilos del menú de navegación */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #333333;
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Contenido principal */
+.content {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Estilos para los títulos de sección */
+.content h2 {
+    color: #333333;
+}
+
+/* Estilos para el texto de sección */
+.content p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Pie de página */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed; /* Cambia la posición a fija */
+    left: 0;
+    bottom: -80px; /* Desplaza el footer hacia abajo */
+    width: 100%;
+    z-index: 1000;
+    height: auto; /* Altura dinámica */
+    transition: bottom 0.3s ease; /* Añade una transición suave */
+}
+
+/* Ajustes adicionales para el contenido */
+.container.content {
+    margin-bottom: 160px; /* Ajusta el margen inferior para dejar espacio para el footer */
+}
+
+
+
+footer h4 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los enlaces de redes sociales */
+.redes-sociales li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Acordeón de preguntas frecuentes */
+.accordion-item {
+    overflow: hidden;
+    border-bottom: 1px solid #dddddd; /* Agrega una línea gris clara entre los elementos del acordeón */
+}
+
+.accordion-button {
+    width: 100%;
+    text-align: left;
+}
+
+.accordion-button:focus {
+    outline: none; /* Elimina el contorno predeterminado al hacer foco en los botones del acordeón */
+}
+
+.accordion-body {
+    padding: 10px 0;
+}
+
+/* Cambia el ícono de flecha en el acordeón */
+.accordion-button::after {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: auto;
+    content: "";
+    background-image: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/svgs/solid/angle-up.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 0.3s ease; /* Agrega una transición suave al ícono */
+}
+
+.accordion-button[aria-expanded="true"]::after {
+    transform: rotate(180deg); /* Rota el ícono cuando el contenido está expandido */
+}
+
+.accordion-body {
+    padding: 10px 20px; /* Ajusta el espacio alrededor del texto dentro del desplegable */
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px; /* Ajusta el padding para dispositivos pequeños */
+    }
+
+    footer {
+        position: relative; /* Cambia la posición a relativa para que no tape el contenido */
+    }
+}
+
+/* Estilos específicos para dispositivos muy pequeños */
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 100%; /* Ocupa todo el ancho de la pantalla en dispositivos muy pequeños */
+    }
+}

@@ -111,3 +111,8 @@ header {
     margin-left: auto; /* Centra horizontalmente */
     margin-right: auto; /* Centra horizontalmente */
 }
+        /* Estilos para el logo en la barra de navegación */
+        .navbar-brand img {
+            height: 60px; /* Ajusta la altura del logo */
+            width: auto; /* Permite que el ancho se ajuste automáticamente */
+        }
