@@ -217,6 +217,9 @@ p, ol, ul {
     }
 }
 
+.card p{
+    margin-bottom: 20px;
+}
 /* Estilos específicos para dispositivos pequeños */
 @media screen and (max-width: 768px) {
     .container {
