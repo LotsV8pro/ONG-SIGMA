@@ -97,12 +97,42 @@ footer {
     background-color: #343a40;
     color: #ffffff;
     text-align: center;
+    padding: 30px 0; /* Añadido para espaciado interno */
 }
 
 footer h4 {
     color: #ffffff;
-    margin-bottom: 5%;
+    margin-bottom: 20px; /* Reducido el margen inferior */
 }
+
+footer .redes-sociales {
+    margin: 5px auto;
+    padding: 0;
+}
+
+footer .redes-sociales li {
+    display: inline-block;
+    margin-right: 0; /* Cambiado a 0 para eliminar el margen derecho */
+}
+
+footer .redes-sociales li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+footer img {
+    height: 50px; /* Ajustar la altura de las imágenes */
+    width: auto; /* Permitir que el ancho se ajuste automáticamente */
+    vertical-align: middle; /* Alinea verticalmente las imágenes con el texto */
+    margin-right: 10px; /* Añade un pequeño margen a la derecha de las imágenes */
+    margin-top: 5px;
+    margin-bottom: -5px; /* Reducir el espacio inferior */
+}
+
+footer .col-md-6 {
+    margin: 0 10px; /* Reducido el margen entre las columnas */
+    flex: 1; /* Distribuye el espacio de manera equitativa */
+}
+
 
 /* Ajustes adicionales para el contenido */
 .container.content {

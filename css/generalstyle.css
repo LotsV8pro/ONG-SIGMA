@@ -10,14 +10,18 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Hace que el cuerpo ocupe al menos el 100% del alto de la ventana */
 }
 
 /* Imagen de fondo para el cuerpo */
 body::before {
     content: '';
-    background-image: url('../img/background/background.jpeg');
-    background-repeat: repeat;
-    position: absolute;
+    background-image: url('../../../img/background/background.jpeg');
+    background-repeat: repeat; /* Permite que la imagen se repita */
+    background-size: auto; /* Mantiene la resolución original de la imagen */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -36,6 +40,7 @@ body::before {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    flex: 1; /* Hace que este contenedor ocupe todo el espacio disponible */
 }
 
 /* Cabecera */
@@ -67,17 +72,34 @@ header {
 
 /* Contenido principal */
 .content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     background-color: #ffffff;
     padding: 20px;
+    text-align: center;
 }
 
-.content-section {
-    width: 48%;
-    margin-bottom: 20px;
+/* Estilos para los títulos de sección */
+.content h2 {
+    color: #333333;
 }
+
+/* Estilos para el texto de sección */
+.content p {
+    color: #666666;
+    line-height: 1.6;
+    margin: 10px;
+}
+
+/* Estilos para los títulos de sección */
+.content h2 {
+    color: #333333;
+}
+
+/* Estilos para el texto de sección */
+.content p {
+    color: #666666;
+    line-height: 1.6;
+}
+
 
 .content-section h2 {
     color: #333333;
@@ -109,13 +131,41 @@ header {
 footer {
     background-color: #343a40;
     color: #ffffff;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px; /* Ajusta el relleno del pie de página */
 }
 
 footer h4 {
     color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Reducido el margen inferior */
+}
+
+footer .redes-sociales {
+    margin: 5px auto;
+    padding: 0;
+}
+
+footer .redes-sociales li {
+    display: inline-block;
+    margin-right: 0; /* Cambiado a 0 para eliminar el margen derecho */
+}
+
+footer .redes-sociales li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+footer img {
+    height: 50px; /* Ajustar la altura de las imágenes */
+    width: auto; /* Permitir que el ancho se ajuste automáticamente */
+    vertical-align: middle; /* Alinea verticalmente las imágenes con el texto */
+    margin-right: 10px; /* Añade un pequeño margen a la derecha de las imágenes */
+    margin-top: 5px;
+    margin-bottom: -5px; /* Reducir el espacio inferior */
+}
+
+footer .col-md-6 {
+    margin: 0 10px; /* Reducido el margen entre las columnas */
+    flex: 1; /* Distribuye el espacio de manera equitativa */
 }
 
 iframe {
@@ -136,6 +186,7 @@ p, ol, ul {
     font-size: 16px;
     line-height: 1.6;
 }
+
 .col-md-6 {
     border-right: 1px solid #dddddd; /* Agrega una línea gris clara a la derecha de la primera columna */
     padding-right: 15px; /* Ajusta el espacio entre el borde derecho y el contenido */
@@ -149,6 +200,7 @@ p, ol, ul {
 .col-md-6:first-child {
     border-right: 1px solid #dddddd; /* Agrega una línea gris clara a la derecha de la primera columna */
 }
+
 .accordion-item {
     overflow: hidden; /* Para evitar el desplazamiento del contenido al abrirse */
 }
@@ -157,3 +209,68 @@ p, ol, ul {
     width: 100%; /* Para que el botón ocupe todo el ancho del contenedor */
     text-align: left; /* Alineación del texto a la izquierda */
 }
+
+/* Estilos específicos para dispositivos de tamaño medio */
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 100%; /* Ocupa todo el ancho de la pantalla en dispositivos de tamaño medio */
+    }
+}
+
+/* Estilos específicos para dispositivos pequeños */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px; /* Ajusta el padding para dispositivos pequeños */
+    }
+
+    footer {
+        position: relative; /* Cambia la posición a relativa para que no tape el contenido */
+    }
+
+    .col-md-6 {
+        border-right: none; /* Elimina el borde derecho en dispositivos pequeños */
+        padding-right: 0; /* Elimina el relleno derecho */
+        padding-left: 0; /* Elimina el relleno izquierdo */
+    }
+}
+
+/* Estilos específicos para dispositivos muy pequeños */
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 10px; /* Ajusta el padding para dispositivos muy pequeños */
+    }
+
+    footer {
+        position: relative; /* Cambia la posición a relativa para que no tape el contenido */
+    }
+
+    body::before {
+        background-size: cover; /* Cambia el tamaño del fondo para cubrir completamente */
+    }
+
+    .container, .col-md-6 {
+        max-width: 100%; /* Ocupa todo el ancho de la pantalla en dispositivos muy pequeños */
+    }
+
+    iframe {
+        max-width: 100%; /* Ajusta el ancho máximo del iframe al 100% del contenedor padre */
+    }
+
+    body {
+        overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    }
+    .col-md-6 {
+        border-right: 1px solid #dddddd; /* Agrega una línea gris clara a la derecha de la primera columna */
+        padding-right: 15px; /* Ajusta el espacio entre el borde derecho y el contenido */
+    }
+    
+    .col-md-6:last-child {
+        border-right: none; /* Elimina la línea gris clara a la derecha de la última columna */
+        padding-left: 15px; /* Ajusta el espacio entre el borde izquierdo y el contenido */
+    }
+    
+    .col-md-6:first-child {
+        border-right: 1px solid #dddddd; /* Agrega una línea gris clara a la derecha de la primera columna */
+    }
+}
+
