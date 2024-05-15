@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../../index.html"><img  id="logo" src="../../img/logo/logo.png"></a>
+              <a class="navbar-brand" href="../../../index.html"><img  id="logo" src="../../../img/logo/logo.png"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -22,19 +22,19 @@
                     <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../meetings/meetings.html">Meetings</a>
+                    <a class="nav-link" href="../../meetings/meetings.html">Meetings</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../../view/donaciones/donaciones.html">Donaciones</a>
+                    <a class="nav-link" href="../../../view/donaciones/donaciones.html">Donaciones</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Mas informacion
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../../view/preguntas_frecuentes/preguntas_frecuentes.html">Preguntas frequentes</a></li>
-                      <li><a class="dropdown-item" href="../../view/ayuda/ayuda.html">Ayuda</a></li>
-                      <li><a class="dropdown-item" href="../../view/soporte/soporte.html">Soporte</a></li>
+                      <li><a class="dropdown-item" href="../../../view/preguntas_frecuentes/preguntas_frecuentes.html">Preguntas frequentes</a></li>
+                      <li><a class="dropdown-item" href="../../../view/ayuda/ayuda.html">Ayuda</a></li>
+                      <li><a class="dropdown-item" href="../../../view/soporte/soporte.html">Soporte</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -47,13 +47,13 @@
         <div class="mb-3 text-center">
             <label for="cantidad_donacion" class="form-label">Cantidad a Donar (€)</label>
             <select class="form-select" id="cantidad_donacion">
-                <option value="1">1</option>
-                <option value="5">5</option>
-                <option value="15">15</option>
-                <option value="20">20</option>
-                <option value="25">25</option>
-                <option value="50">50</option>
-                <option value="100">100</option>
+                <option value="1">1€</option>
+                <option value="5">5€</option>
+                <option value="15">15€</option>
+                <option value="20">20€</option>
+                <option value="25">25€</option>
+                <option value="50">50€</option>
+                <option value="100">100€</option>
             </select>
             <button type="button" class="btn btn-primary payment-btn" data-bs-toggle="modal" data-bs-target="#paymentModal">Donar Ahora</button>
         </div>
@@ -72,7 +72,7 @@
                     <div class="payment-method">
                         <p>Selecciona una opción para realizar el pago:</p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="paymentMethod" id="visaPayment" value="visa">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="visaPayment" value="visa" checked>
                             <label class="form-check-label" for="visaPayment">
                                 Visa
                             </label>
@@ -93,29 +93,28 @@
                     
                     <!-- Sección para completar los detalles de la tarjeta -->
                     <div class="card-details">
-                        <form>
+                        <form action="../gracias/gracias_unico.html">
                             <div class="mb-3">
                                 <label for="cardNumber" class="form-label">Número de Tarjeta</label>
-                                <input type="text" class="form-control" id="cardNumber">
+                                <input type="text" class="form-control" id="cardNumber" maxlength="16" name="cardNumber" pattern="\d{16}" title="Debe tener 16 dígitos numéricos" required>
                             </div>
                             <div class="mb-3">
                                 <label for="cvv" class="form-label">CVV</label>
-                                <input type="text" class="form-control" id="cvv">
+                                <input type="text" class="form-control" id="cvv" name="cvv" maxlength="3" pattern="\d{3}" title="Debe tener 3 dígitos numéricos" required>
                             </div>
                             <div class="mb-3">
                                 <label for="expiryDate" class="form-label">Fecha de Expiración</label>
-                                <input type="text" class="form-control" id="expiryDate">
+                                <input type="text" class="form-control" id="expiryDate" name="expiryDate" placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/([0-9]{2})" title="Formato válido: MM/YY" required>
                             </div>
                             <div class="mb-3">
                                 <label for="cardOwner" class="form-label">Nombre del Propietario</label>
-                                <input type="text" class="form-control" id="cardOwner">
+                                <input type="text" class="form-control" id="cardOwner" name="cardOwner" required>
                             </div>
-                        </form>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Pagar</button>
+                    <button type="submit" class="btn btn-primary">Pagar</button>
                 </div>
             </div>
         </div>
