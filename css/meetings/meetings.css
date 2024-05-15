@@ -133,6 +133,9 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 20px; /* Ajusta el relleno del pie de página */
+    margin-top: 20px;
+    bottom: 0; /* Fijar el pie de página en la parte inferior de la ventana */
+    width: 100%; /* Ajustar el ancho al 100% */
 }
 
 footer h4 {
@@ -213,6 +216,24 @@ p, ol, ul {
 ul {
     list-style-type: none; /* Elimina los puntos de la lista desordenada */
 }
+/* Estilos para los iframes de calendario */
+iframe.calendar {
+    border: 1px solid #dddddd; /* Añade un borde similar al del contenedor */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-bottom: 20px; /* Espacio inferior */
+    width: 100%;
+    height: a;
+    min-height: 600px; /* Altura mínima del iframe */
+    margin-bottom: 10px;
+}
+
+
+.col-md-6 {
+    padding-right: 15px; /* Agrega padding a la derecha */
+    padding-left: 15px; /* Agrega padding a la izquierda */
+}
 
 /* Estilos específicos para dispositivos de tamaño medio */
 @media screen and (max-width: 992px) {
@@ -254,7 +275,7 @@ ul {
     }
 
     body::before {
-        background-size: cover; /* Cambia el tamaño del fondo para cubrir completamente */
+        background-size: repeat; /* Cambia el tamaño del fondo para cubrir completamente */
     }
 
     .container, .col-md-6 {
