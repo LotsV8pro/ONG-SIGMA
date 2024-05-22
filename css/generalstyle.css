@@ -35,6 +35,9 @@ body::before {
     width: auto;
 }
 
+header img {
+    width: 34px;
+}
 /* Contenedor principal */
 .container {
     max-width: 1200px;
