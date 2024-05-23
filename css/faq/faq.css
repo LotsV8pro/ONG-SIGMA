@@ -184,7 +184,9 @@ footer .col-md-6 {
 .accordion-body {
     padding: 10px 20px; /* Ajusta el espacio alrededor del texto dentro del desplegable */
 }
-
+header img {
+    width: 34px;
+}
 /* Estilos específicos para dispositivos móviles */
 @media screen and (max-width: 768px) {
     .container {

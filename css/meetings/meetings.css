@@ -263,7 +263,9 @@ iframe.calendar {
         padding-left: 0; /* Elimina el relleno izquierdo */
     }
 }
-
+header img {
+    width: 34px;
+}
 /* Estilos específicos para dispositivos muy pequeños */
 @media screen and (max-width: 576px) {
     .container {

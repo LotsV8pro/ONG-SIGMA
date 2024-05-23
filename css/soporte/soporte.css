@@ -192,9 +192,13 @@ iframe {
     border-radius: 15px;
 }
 
-img {
+.img-fluid {
     margin: 10%;
     border-radius: 10px;
+}
+
+header img {
+    width: 34px;
 }
 
 /* Estilos específicos para dispositivos móviles */

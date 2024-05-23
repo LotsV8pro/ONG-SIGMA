@@ -157,3 +157,6 @@ footer .col-md-6 {
     margin: 0 10px; /* Reducido el margen entre las columnas */
     flex: 1; /* Distribuye el espacio de manera equitativa */
 }
+header img {
+    width: 34px;
+}
