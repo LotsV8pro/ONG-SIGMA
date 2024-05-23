@@ -1,11 +1,149 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-^<meta charset="UTF-8"^> 
-^<meta name="viewport" content="width=device-width, initial-scale=1.0"^> 
-^<title>Preguntas frecuentes en en</title> 
-</head> 
-<body> 
-    <h1>Preguntas frecuentes en en</h1> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website - Support</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../css/faq/faq.css"> <!-- Your custom style file -->
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img id="logo" src="../../../../img/logo/logo.png" alt="Logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../meetings/meetings.html">Meetings</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../donaciones/donaciones.html">Donations</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      More Information
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../preguntas_frecuentes/preguntas_frecuentes.html">Frequently Asked Questions</a></li>
+                      <li><a class="dropdown-item" href="../ayuda/ayuda.html">Help</a></li>
+                      <li><a class="dropdown-item" href="../soporte/soporte.html">Support</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="../../../../img/lang/en.png" alt="Change Language">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="../../../../view/preguntas_frecuentes/preguntas_frecuentes.html">Español</a></li>
+                      <li><a class="dropdown-item" href="../../cat/preguntas_frecuentes/preguntas_frecuentes.html">Catalan</a></li>
+                      <!-- Add more language options as necessary -->
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>    
+    </header>
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Frequently Asked Questions</h2>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Why are you against electric cars?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We are against electric cars due to their negative impact on the environment during production, dependency on finite resources for their batteries, and lack of adequate infrastructure for charging.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What alternatives do you propose to electric cars?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We propose promoting the use of public transportation, carpooling, walking, biking, and opting for vehicles powered by renewable fuels such as hydrogen or biofuels.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What is the environmental impact of manufacturing electric cars?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                The manufacturing of electric cars involves the extraction of minerals such as lithium and cobalt, whose exploitation can lead to deforestation, soil degradation, and water pollution.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                What measures do you propose to reduce the use of electric cars?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                To reduce the use of electric cars, we advocate for efficient public transportation policies, investment in infrastructure for sustainable transportation modes, and raising awareness about the environmental impacts of electric cars.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                What are the advantages of fuel-powered cars?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Fuel-powered cars offer greater range, faster refueling times, and a more developed refueling infrastructure compared to electric cars.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <h4>Contact</h4>
+                    <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+                    <p><strong>Phone:</strong> +123 456 789</p>
+                    <p><strong>Email:</strong> info@sigma_ong.com</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <h4>Social Media</h4>
+                    <ul class="list-unstyled redes-sociales">
+                        <li><a href="https://www.facebook.com/sigma-ong" target="_blank"><img src="../../../../img/social media/blanco/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="https://twitter.com/sigma-ong" target="_blank"><img src="../../../../img/social media/blanco/twitter.png" alt="Twitter"></a></li>
+                        <li><a href="https://www.instagram.com/sigma-ong" target="_blank"><img src="../../../../img/social media/blanco/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="https://www.linkedin.com/company/sigma-ong" target="_blank"><img src="../../../../img/social media/blanco/linkedin.png" alt="LinkedIn"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
